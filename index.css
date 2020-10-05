@@ -1,6 +1,7 @@
 .container {
     border: 0;
-    padding: 0;
+	padding: 0;
+	flex-wrap: nowrap;
 }
 
 p {
@@ -12,19 +13,31 @@ li a {
 	color: white;
 }
 
+.nav-row {
+	flex-wrap: nowrap;
+}
+
+ul.topmost-nav {
+	flex-wrap: nowrap;
+}
+
+a.nav-link {
+	padding: 1.5rem 1.5rem;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 .first-row {
     background-image: url('Utilities/7360.jpg');
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	padding: 15px;
 }
 
-.topnav-row {
-	height: 40px;
-}
 
 img.logo-nav {
-	height: 40px;
+	max-height: 40px;
+	min-height: 10px;
+	max-width: 100%;
 	border-radius: 50%;
 }
 
@@ -37,8 +50,9 @@ img.logo-nav {
 	text-align: justify;
 }
 
-.jumbotron-text  h1 {
-	font-size: 2.2rem;
+.jumbotron-text h1 {
+	font-size: larger;
+	margin-top: 5px;
 }
 
 .jumbotron-text p {
@@ -59,12 +73,14 @@ button.more {
 }
 
 .tab-box {
-	margin-top: -60px;
+	margin-top: -10%;
 	margin-right: 15px;
 	background-color: white;
 	border-radius: 2px;
 	box-shadow: 1px 1px 2px;
 	padding: 10px;
+	max-width: 80px;
+	/* max-height: 230px; */
 }
 
 h3.box-heading {
@@ -134,4 +150,70 @@ span.pro {
 	padding-left: 5px;
 	padding-right: 5px;
 	height: 1px;
+}
+
+
+@media screen and (max-width: 680px){
+	li.nav-item a {
+		font-size: 13px;
+		/* color: chocolate; */
+	}
+
+	.nav-col {
+		width: 70%;
+		position: relative;
+		padding-left: 1px;
+		padding-right: 1px;
+	}
+
+}
+	ul.topmost-nav {
+		margin-left: 1%;
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.first-row {
+		background-image: url('Utilities/7360.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 25px;
+	}
+
+	p.boxp-2 {
+		font-size: .7rem;
+	}
+
+	.last-box {
+		padding: 0px;
+	}
+
+	h4.choose-heading {
+		text-align: left;
+	}
+
+	p.choose-p {
+		font-size: .4rem;
+	}
+
+	.choose-box {
+		padding: 0px;
+	}
+
+	div.blue-li {
+		padding: 0px;
+	}
+
+	a.blue-i {
+		padding-left: 6%;
+	}
+
+	a.nav-link {
+		padding: .7rem .5rem;
+	}
+
+	img.logo-nav {
+		min-height: 20px;
+		min-width: 40px;
+	}
 }
