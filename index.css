@@ -229,3 +229,13 @@ span.pro {
 	    margin-top: -20%;
     }
 }
+
+
+@media screen and (max-width: 500px){
+	li.nav-item a {
+		font-size: 30%;
+		/* color: chocolate; */
+	}
+
+}
+
