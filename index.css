@@ -162,7 +162,7 @@ span.pro {
 
 @media screen and (max-width: 680px){
 	li.nav-item a {
-		font-size: 50%;
+		font-size: 45%;
 		/* color: chocolate; */
 	}
 
@@ -231,10 +231,9 @@ span.pro {
 }
 
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 450px){
 	li.nav-item a {
 		font-size: 30%;
-		/* color: chocolate; */
 	}
 
 }
