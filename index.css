@@ -14,7 +14,7 @@ li a {
 }
 
 h4.choose-us {
-	font-size: 95%;
+	font-size: 100%;
 }
 
 .nav-row {
@@ -28,6 +28,8 @@ ul.topmost-nav {
 a.nav-link {
 	padding: 1.5rem 1.5rem;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 80%;
+	flex-wrap: nowrap;
 }
 
 .first-row {
@@ -43,6 +45,7 @@ img.logo-nav {
 	min-height: 10px;
 	max-width: 100%;
 	border-radius: 50%;
+	padding-top: 0px;
 }
 
 .jumbotron-text {
@@ -54,13 +57,13 @@ img.logo-nav {
 	text-align: justify;
 }
 
-.jumbotron-text h1 {
-	font-size: larger;
-	margin-top: 5px;
+.jumbotron-text p {
+	font-size: 100%;
 }
 
-.jumbotron-text p {
-	font-size: .9rem;
+.jumbotron-text h1 {
+	font-size: 100%;
+	margin-top: 5px;
 }
 
 button.more {
@@ -77,30 +80,28 @@ button.more {
 }
 
 .tab-box {
-	margin-top: -9%;
+	margin-top: -40px;
 	margin-right: 15px;
 	background-color: white;
 	border-radius: 2px;
 	box-shadow: 1px 1px 2px;
 	padding: 10px;
-	max-width: 80px;
+	border: 1px solid white;
 	/* max-height: 230px; */
 }
 
 h3.box-heading {
 	color: darkturquoise;
 	margin: 0px;
-	margin-top: 10%;
+	margin-top: 5%;
 }
 
 p.boxp-1 {
 	font-weight: bolder;
-	font-size: 100%;
+	padding-right: 1px;
 	margin-bottom: 0px;
-}
-
-p.boxp-2 {
-	font-size: .8rem;
+	text-align: justify;
+	
 }
 
 .third-row {
@@ -114,17 +115,13 @@ p.boxp-2 {
 iframe {
 	margin-top: 5px;
 	margin-left: 5px;
-	height: 200px;
 	width: 100%;
-}
-
-p.small-text {
-	font-size: .8rem;
+	min-height: 300px;
 }
 
 .last-box {
 	border: 1px solid rgb(15, 94, 168);
-	margin: 5px;
+	margin-bottom: 5px;
 }
 
 h4.choose-heading {
@@ -132,11 +129,16 @@ h4.choose-heading {
 }
 
 p.choose-p {
-	font-size: .7rem;
+	font-size: 80%;
+	padding-bottom: 2px;
 }
 
 a.home {
     color: aqua;
+}
+
+p.lead {
+	text-align: left;
 }
 
 ul.topmost-nav {
@@ -153,21 +155,21 @@ a.blue-i {
 }
 
 span.pro {
-	background-color: rgb(7, 187, 187);
-	padding-left: 5px;
-	padding-right: 5px;
-	height: 1px;
+	background-color: rgb(7, 187, 187);;
+	font-size: 80%;
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-left: -px;
+	
+}
+
+.last-box {
+	max-height: 200px;
 }
 
 
 @media screen and (max-width: 680px){
-	li.nav-item a {
-		font-size: 45%;
-		/* color: chocolate; */
-	}
-
 	.nav-col {
-		width: 70%;
 		position: relative;
 		padding-left: 1px;
 		padding-right: 1px;
@@ -175,7 +177,7 @@ span.pro {
 
 }
 	ul.topmost-nav {
-		margin-left: 1%;
+		margin-left: 0px;
 		display: flex;
 		flex-wrap: nowrap;
 	}
@@ -184,15 +186,7 @@ span.pro {
 		background-image: url('Utilities/7360.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
-		padding: 25px;
-	}
-
-	p.boxp-1 {
-		font-size: 90%;
-	}
-
-	p.boxp-2 {
-		font-size: 70%;
+		padding: 2%;
 	}
 
 	.last-box {
@@ -201,10 +195,6 @@ span.pro {
 
 	h4.choose-heading {
 		text-align: left;
-	}
-
-	p.choose-p {
-		font-size: .4rem;
 	}
 
 	.choose-box {
@@ -217,24 +207,19 @@ span.pro {
 
 
 	a.nav-link {
-		padding: .7rem .5rem;
+		padding: 1rem .3rem;
 	}
 
 	img.logo-nav {
 		min-height: 20px;
-		min-width: 40px;
+		min-width: 30px;
+		margin-top: 1rem;
 	}
 	
-   .tab-box {
-	    margin-top: -20%;
-    }
-}
-
-
-@media screen and (max-width: 450px){
-	li.nav-item a {
-		font-size: 30%;
+	.tab-box {
+		margin-top: -65px;
+		margin-bottom: 70px;
 	}
-
 }
+
 
