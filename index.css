@@ -13,12 +13,10 @@ li a {
 	color: white;
 }
 
-h4.choose-us {
-	font-size: 100%;
-}
 
 .nav-row {
 	flex-wrap: nowrap;
+	color: white;
 }
 
 ul.topmost-nav {
@@ -26,10 +24,8 @@ ul.topmost-nav {
 }
 
 a.nav-link {
-	padding: 1.5rem 1.5rem;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 80%;
-	flex-wrap: nowrap;
+
 }
 
 .first-row {
@@ -38,7 +34,6 @@ a.nav-link {
 	background-size: cover;
 	padding: 15px;
 }
-
 
 img.logo-nav {
 	max-height: 40px;
@@ -80,7 +75,7 @@ button.more {
 }
 
 .tab-box {
-	margin-top: -40px;
+	margin-top: -70px;
 	margin-right: 15px;
 	background-color: white;
 	border-radius: 2px;
@@ -141,6 +136,10 @@ p.lead {
 	text-align: left;
 }
 
+span {
+	color: white;
+}
+
 ul.topmost-nav {
 	margin-left: 30px;
 }
@@ -159,12 +158,7 @@ span.pro {
 	font-size: 80%;
 	padding-left: 2px;
 	padding-right: 2px;
-	margin-left: -px;
 	
-}
-
-.last-box {
-	max-height: 200px;
 }
 
 
@@ -173,20 +167,6 @@ span.pro {
 		position: relative;
 		padding-left: 1px;
 		padding-right: 1px;
-	}
-
-}
-	ul.topmost-nav {
-		margin-left: 0px;
-		display: flex;
-		flex-wrap: nowrap;
-	}
-
-	.first-row {
-		background-image: url('Utilities/7360.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		padding: 2%;
 	}
 
 	.last-box {
@@ -205,10 +185,6 @@ span.pro {
 		padding: 0px;
 	}
 
-
-	a.nav-link {
-		padding: 1rem .3rem;
-	}
 
 	img.logo-nav {
 		min-height: 20px;
