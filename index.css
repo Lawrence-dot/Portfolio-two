@@ -25,7 +25,13 @@ ul.topmost-nav {
 
 a.nav-link {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 1rem;
+	padding: 1rem 2.9rem;
+}
 
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.3rem!important;
+    padding-left: 1.4rem!important;
 }
 
 .first-row {
@@ -57,7 +63,6 @@ img.logo-nav {
 }
 
 .jumbotron-text h1 {
-	font-size: 100%;
 	margin-top: 5px;
 }
 
@@ -101,7 +106,7 @@ p.boxp-1 {
 
 .third-row {
 /*	background-image: url('');*/
-	background-color: rgb(15, 4, 66);
+	background-color: rgb(3, 18, 59.1);
 	padding-top: 20px;
 	padding-bottom: 20px;
 	color: white;
@@ -162,7 +167,7 @@ span.pro {
 }
 
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 700px){
 	.nav-col {
 		position: relative;
 		padding-left: 1px;
@@ -176,6 +181,11 @@ span.pro {
 	h4.choose-heading {
 		text-align: left;
 	}
+	
+	.jumbotron-text h1 {
+	font-size: 100%;
+	margin-top: 5px;
+   }
 
 	.choose-box {
 		padding: 0px;
