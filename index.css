@@ -25,13 +25,11 @@ ul.topmost-nav {
 
 a.nav-link {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-	font-size: 1rem;
-	padding: 1rem 2.9rem;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.3rem!important;
-    padding-left: 1.4rem!important;
+    padding-right: .9rem!important;
+    padding-left: .7rem!important;
 }
 
 .first-row {
@@ -63,6 +61,7 @@ img.logo-nav {
 }
 
 .jumbotron-text h1 {
+	font-size: 1.7rem;
 	margin-top: 5px;
 }
 
@@ -79,15 +78,15 @@ button.more {
 	padding: 20px;
 }
 
-.tab-box {
+.content {
 	margin-top: -70px;
-	margin-right: 15px;
-	background-color: white;
 	border-radius: 2px;
 	box-shadow: 1px 1px 2px;
-	padding: 10px;
-	border: 1px solid white;
-	/* max-height: 230px; */
+	margin-bottom: 10px;
+}
+
+.navbar {
+	padding: 0rem!important;
 }
 
 h3.box-heading {
@@ -116,20 +115,26 @@ iframe {
 	margin-top: 5px;
 	margin-left: 5px;
 	width: 100%;
-	min-height: 300px;
+	height: 85%;
 }
 
 .last-box {
+	padding-right: 0px!important;
+}
+
+.box-content {
 	border: 1px solid rgb(15, 94, 168);
 	margin-bottom: 5px;
+	/* margin-right: 1px; */
 }
 
 h4.choose-heading {
 	font-size: 90%;
+	margin-bottom: 1.5px;
 }
 
 p.choose-p {
-	font-size: 80%;
+	font-size: .7rem;
 	padding-bottom: 2px;
 }
 
@@ -167,24 +172,35 @@ span.pro {
 }
 
 
-@media screen and (max-width: 700px){
-	.nav-col {
-		position: relative;
-		padding-left: 1px;
-		padding-right: 1px;
-	}
+/* For Small Devices */
+@media screen and (max-width: 576px){
+	.jumbotron-text h1 {
+		font-size: 1.5rem;
+		margin-top: 5px;
+   }
 
-	.last-box {
-		padding: 0px;
-	}
+   p.choose-p {
+	font-size: .5rem;
+	padding-bottom: 2px;
+}
 
+   .content {
+		margin-top: -20px;
+		border-radius: 2px;
+		box-shadow: 1px 1px 2px;
+		margin-bottom: 30px;
+}
+}
+
+/* For Medium Devices */
+@media screen and (max-width: 768px){
 	h4.choose-heading {
 		text-align: left;
 	}
 	
 	.jumbotron-text h1 {
-	font-size: 100%;
-	margin-top: 5px;
+		font-size: 1.6rem;
+		margin-top: 5px;
    }
 
 	.choose-box {
@@ -193,6 +209,11 @@ span.pro {
 
 	div.blue-li {
 		padding: 0px;
+	}
+
+	p.choose-p {
+		font-size: .7rem;
+		padding-bottom: 2px;
 	}
 
 
@@ -208,4 +229,12 @@ span.pro {
 	}
 }
 
+
+/* For Large Devices */
+@media screen and (max-width: 992px){
+	.jumbotron-text h1 {
+		font-size: 1.2rem;
+		margin-top: 5px;
+   }
+}
 
